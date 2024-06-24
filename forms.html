@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- <form> -->
+            
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password"> 
+            <!-- <input type="submit" class="button" value="Submit"> -->
+            <button class="submitBtn" id="submitBtnId">Submit</button>
+        <!-- </form> -->
+        <div class="link-container">
+           <p> <a href="#">Forgot Password?</a></p>
+           <p> Dont have an account ?<a href="#">Sign Up</a> </p>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
+
+
+    <script>
+        // document.getElementById('submitBtnId').addEventListener('click', function(){
+        //     document.getElementsByTagName('h2')[0].textContent = 'sdfsfsfsfsdfsdf';
+        // })
+
+        $('#submitBtnId').click(function(){
+            $('h2').css('color', 'red');
+        })
+        
+    </script>
+</body>
+</html>
